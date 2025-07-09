@@ -60,8 +60,9 @@ async def get_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         await channel_link = "https://t.me/sigmaecc"
 await update.message.reply_text(f"برای دریافت فایل، لطفاً ابتدا عضو کانال شوید:\n{channel_link}")
-{CHANNEL_USERNAME}
-سپس دوباره /start را بزنید.")
+        await update.message.reply_text(
+    f"برای دریافت فایل، لطفاً ابتدا عضو کانال شوید:\n{channel_link}\nرا بزنید /start، سپس دوباره بیایید."
+)
         return ConversationHandler.END
 
     phone = context.user_data["phone"]
