@@ -58,7 +58,8 @@ async def get_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if member.status not in ["member", "creator", "administrator"]:
             raise Exception("Not a member")
     except:
-        await update.message.reply_text(f"برای دریافت فایل، لطفاً ابتدا عضو کانال شوید:
+        await channel_link = "https://t.me/sigmaecc"
+await update.message.reply_text(f"برای دریافت فایل، لطفاً ابتدا عضو کانال شوید:\n{channel_link}")
 {CHANNEL_USERNAME}
 سپس دوباره /start را بزنید.")
         return ConversationHandler.END
