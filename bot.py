@@ -7,7 +7,7 @@ from telegram.ext import (
 )
 
 # تنظیمات اولیه
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM"
 CHANNEL_USERNAME = "@sigmaecc"
 PDF_FILE_PATH = "1_17511833796.pdf"
 
