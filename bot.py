@@ -43,20 +43,12 @@ async def ask_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def ask_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["city"] = update.message.text
-
-    summary = (
-        f"✅ اطلاعات ثبت شد:
-"
-        f"👤 نام: {context.user_data['name']}
-"
-        f"📞 شماره موبایل: {context.user_data['phone']}
-"
-        f"🎓 مقطع: {context.user_data['grade']}
-"
-        f"📚 رشته: {context.user_data['field']}
-"
-        f"🏙 شهر: {context.user_data['city']}"
-    )
+    summary = f"""✅ ثبت اطلاعات:
+👤 نام: {context.user_data['name']}
+📞 موبایل شماره: {context.user_data['phone']}
+📘 مقطع: {context.user_data['grade']}
+🎓 رشته: {context.user_data['field']}
+📍 شهر: {context.user_data['city']}"""
     await update.message.reply_text(summary)
     return ConversationHandler.END
 
