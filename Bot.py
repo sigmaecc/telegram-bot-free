@@ -3,7 +3,7 @@ import logging
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ConversationHandler, ContextTypes
 
-TOKEN = "YOUR_BOT_TOKEN"  # توکن واقعی رباتت رو اینجا وارد کن
+TOKEN = "7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM"
 
 logging.basicConfig(level=logging.INFO)
 
