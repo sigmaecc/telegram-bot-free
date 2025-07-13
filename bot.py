@@ -14,7 +14,7 @@ from telegram.constants import ParseMode
 ASK_NAME, ASK_PHONE, ASK_GRADE, ASK_FIELD, ASK_CITY = range(5)
 
 # توکن ربات
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM"
 
 # تابع شروع
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
