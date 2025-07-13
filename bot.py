@@ -11,7 +11,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # متغیرها
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM")
 CHANNEL_USERNAME = "@sigmaecc"
 PDF_FILE_PATH = "free_file.pdf"
 
