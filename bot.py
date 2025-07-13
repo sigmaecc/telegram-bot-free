@@ -49,19 +49,14 @@ async def ask_field(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def ask_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["city"] = update.message.text
 
-    summary = (
-        f"✅ ثبت اطلاعات:
-"
-        f"👤 نام: {context.user_data['name']}
-"
-        f"📞 موبایل: {context.user_data['phone']}
-"
-        f"📚 مقطع: {context.user_data['grade']}
-"
-        f"🧪 رشته: {context.user_data['field']}
-"
-        f"🏙 شهر: {context.user_data['city']}"
-    )
+       summary = (
+        f"✅ثبت اطلاعات:\n"
+        f"🧑‍💼 نام: {context.user_data['name']}\n"
+        f"📱 موبایل شماره: {context.user_data['phone']}\n"
+        f"🎓 مقطع: {context.user_data['grade']}\n"
+        f"📚 رشته: {context.user_data['field']}\n"
+        f"🏙️ شهر: {context.user_data['city']}"
+    ) 
     await update.message.reply_text(summary)
 
     # ارسال فایل pdf
