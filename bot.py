@@ -9,7 +9,7 @@ from telegram.ext import (
 ASK_NAME, ASK_PHONE, ASK_GRADE, ASK_FIELD, ASK_CITY = range(5)
 
 # Replace this with your actual bot token
-TOKEN = "YOUR_BOT_TOKEN"
+TOKEN = "7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM"
 
 # Start command handler
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
