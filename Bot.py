@@ -104,6 +104,6 @@ def build_app(token: str):
 
 # Run the bot
 if __name__ == "__main__":
-    TOKEN = "PASTE_YOUR_BOT_TOKEN_HERE"
+    TOKEN = "7364645860:AAGJTAIltLb6dwf9o6qr6heSYNu8y9BV8lM"
     app = build_app(TOKEN)
     asyncio.run(app.run_polling())
